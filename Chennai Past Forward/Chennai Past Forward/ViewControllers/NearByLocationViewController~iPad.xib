@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" colorMatched="NO">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NearByLocationViewController">
+            <connections>
+                <outlet property="filter_btn" destination="bN6-9a-oJx" id="FTa-6L-C4a"/>
+                <outlet property="nearTableView" destination="YM4-ql-PpK" id="rhc-F3-CNn"/>
+                <outlet property="view" destination="iN0-l3-epB" id="q0u-zl-plm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YM4-ql-PpK">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="562"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="562" id="XO6-kS-xIX"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="PfW-zH-eMg"/>
+                        <outlet property="delegate" destination="-1" id="KIA-Mz-O2P"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bN6-9a-oJx">
+                    <rect key="frame" x="650" y="411" width="64" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" id="85X-Pd-qnR"/>
+                        <constraint firstAttribute="height" constant="64" id="E2s-Hd-ILB"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="Filter-64.png"/>
+                    <connections>
+                        <action selector="filterbtn_click:" destination="-1" eventType="touchUpInside" id="vwJ-Cw-0j6"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="bN6-9a-oJx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="650" id="7Se-6l-QOy"/>
+                <constraint firstItem="YM4-ql-PpK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Uag-2I-6to"/>
+                <constraint firstAttribute="trailing" secondItem="bN6-9a-oJx" secondAttribute="trailing" constant="54" id="Ufm-wM-bEN"/>
+                <constraint firstAttribute="trailing" secondItem="YM4-ql-PpK" secondAttribute="trailing" id="cVU-XS-elv"/>
+                <constraint firstItem="YM4-ql-PpK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="iNm-4e-ZdL"/>
+                <constraint firstItem="bN6-9a-oJx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="411" id="rrq-XN-28C"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="237" y="316"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Filter-64.png" width="64" height="64"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

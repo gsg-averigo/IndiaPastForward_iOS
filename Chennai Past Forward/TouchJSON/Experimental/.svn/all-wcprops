@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/colaninfotech_stsprod/!svn/ver/1/ServiceTech/ServicePlease/TouchJSON/Experimental
+END
+CFilteringJSONSerializer.h
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/colaninfotech_stsprod/!svn/ver/1/ServiceTech/ServicePlease/TouchJSON/Experimental/CFilteringJSONSerializer.h
+END
+CJSONSerialization.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/colaninfotech_stsprod/!svn/ver/1/ServiceTech/ServicePlease/TouchJSON/Experimental/CJSONSerialization.h
+END
+CJSONDeserializer_BlocksExtensions.h
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/colaninfotech_stsprod/!svn/ver/1/ServiceTech/ServicePlease/TouchJSON/Experimental/CJSONDeserializer_BlocksExtensions.h
+END
+CFilteringJSONSerializer.m
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/colaninfotech_stsprod/!svn/ver/1/ServiceTech/ServicePlease/TouchJSON/Experimental/CFilteringJSONSerializer.m
+END
+CJSONSerialization.m
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/colaninfotech_stsprod/!svn/ver/1/ServiceTech/ServicePlease/TouchJSON/Experimental/CJSONSerialization.m
+END
+CJSONDeserializer_BlocksExtensions.m
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/colaninfotech_stsprod/!svn/ver/1/ServiceTech/ServicePlease/TouchJSON/Experimental/CJSONDeserializer_BlocksExtensions.m
+END
+CJSONSerializedData.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/colaninfotech_stsprod/!svn/ver/1/ServiceTech/ServicePlease/TouchJSON/Experimental/CJSONSerializedData.h
+END
+CJSONSerializedData.m
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/colaninfotech_stsprod/!svn/ver/1/ServiceTech/ServicePlease/TouchJSON/Experimental/CJSONSerializedData.m
+END

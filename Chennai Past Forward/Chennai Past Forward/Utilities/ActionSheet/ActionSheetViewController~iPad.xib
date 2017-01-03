@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" colorMatched="NO">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActionSheetViewController">
+            <connections>
+                <outlet property="backgroundView" destination="eiq-Fo-myJ" id="gMx-70-H0U"/>
+                <outlet property="tableView" destination="ene-WG-hGp" id="QbD-Lt-4RR"/>
+                <outlet property="view" destination="iN0-l3-epB" id="6k7-So-Zrn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eiq-Fo-myJ">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ene-WG-hGp">
+                    <rect key="frame" x="40" y="40" width="659" height="895"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="separatorColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="sectionIndexBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="qW9-Br-nf1"/>
+                        <outlet property="delegate" destination="-1" id="dn4-2P-7W3"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="eiq-Fo-myJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8DU-hh-uK5"/>
+                <constraint firstItem="eiq-Fo-myJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fRJ-m6-dO7"/>
+                <constraint firstAttribute="trailing" secondItem="eiq-Fo-myJ" secondAttribute="trailing" id="g3c-ys-Pvz"/>
+                <constraint firstAttribute="bottom" secondItem="eiq-Fo-myJ" secondAttribute="bottom" id="pzJ-iD-1uw"/>
+            </constraints>
+            <point key="canvasLocation" x="247" y="167"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

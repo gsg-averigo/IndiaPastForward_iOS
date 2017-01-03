@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="NO">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootViewController">
+            <connections>
+                <outlet property="backButton" destination="86r-mf-cnc" id="V8x-xb-whq"/>
+                <outlet property="contentView" destination="rrx-bR-UB4" id="Ds9-gU-1rH"/>
+                <outlet property="headerView" destination="whV-J4-mO7" id="bWP-hZ-tVW"/>
+                <outlet property="menuButton" destination="dWX-Um-wev" id="cuM-i0-ZRU"/>
+                <outlet property="searchTextField" destination="wMw-EB-XeY" id="Qvx-ob-n9Y"/>
+                <outlet property="topvew" destination="O4I-Kt-XZA" id="QfE-d9-Jrz"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="O4I-Kt-XZA">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="94"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search_whole_bg.png" id="whV-J4-mO7">
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="134"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dWX-Um-wev">
+                            <rect key="frame" x="9" y="33" width="43" height="36"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="xl_filter_menu_icon.png">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="menuButtonTapped:" destination="-1" eventType="touchUpInside" id="TQW-AU-HuL"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name, Location, Address" minimumFontSize="17" clearButtonMode="whileEditing" id="wMw-EB-XeY">
+                            <rect key="frame" x="66" y="36" width="621" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="bCC-vx-FeV"/>
+                            </connections>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="86r-mf-cnc">
+                            <rect key="frame" x="705" y="33" width="43" height="36"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="cpf-notify.png">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="backButtonTapped:" destination="-1" eventType="touchUpInside" id="E5c-h8-66N"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="0.0" maxY="-20"/>
+                </view>
+                <view contentMode="scaleToFill" id="rrx-bR-UB4">
+                    <rect key="frame" x="0.0" y="95" width="1216" height="1514"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cpf-notify.png" width="60" height="43"/>
+        <image name="search_whole_bg.png" width="480" height="79"/>
+        <image name="xl_filter_menu_icon.png" width="169" height="116"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

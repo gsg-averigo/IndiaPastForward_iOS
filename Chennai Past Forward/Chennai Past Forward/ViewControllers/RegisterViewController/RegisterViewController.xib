@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="NO">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController">
+            <connections>
+                <outlet property="accessCodeTextField" destination="tTf-Wx-uCV" id="k7K-Tm-k2K"/>
+                <outlet property="alreadyRegisteredButton" destination="a7Z-Df-poq" id="yuC-vL-lW5"/>
+                <outlet property="emailTextField" destination="hws-WO-hGr" id="4sX-S0-IkD"/>
+                <outlet property="nameTextField" destination="gKT-YC-n0B" id="cLG-y5-kLe"/>
+                <outlet property="proceedButton" destination="hPm-Vi-Nzu" id="ZE3-An-bWc"/>
+                <outlet property="scrollView" destination="7Mw-sD-Lfm" id="Phi-Aa-2AM"/>
+                <outlet property="sendAccessCodeButton" destination="0bo-23-QAJ" id="Hgh-da-QOS"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="7Mw-sD-Lfm">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cpf_logo3.png" id="pHf-jj-5Wy">
+                            <rect key="frame" x="54" y="42" width="212" height="64"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eJv-Tu-Kp7">
+                            <rect key="frame" x="20" y="126" width="280" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                            <color key="textColor" red="0.79607843140000001" green="0.4431372549" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="hws-WO-hGr">
+                            <rect key="frame" x="20" y="146" width="280" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <action selector="textfieldreturn:" destination="-1" eventType="editingDidEndOnExit" id="peK-5i-xV3"/>
+                                <outlet property="delegate" destination="-1" id="DLc-0f-rol"/>
+                            </connections>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="0bo-23-QAJ">
+                            <rect key="frame" x="20" y="184" width="280" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                            <state key="normal" title="Send Access Code" backgroundImage="login_button_bg.png">
+                                <color key="titleColor" red="0.53333333329999999" green="0.12549019610000001" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="sendAccessCodeButtonTapped:" destination="-1" eventType="touchUpInside" id="kDM-7w-GMj"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Z4l-7K-Y27">
+                            <rect key="frame" x="20" y="222" width="280" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                            <color key="textColor" red="0.79607843140000001" green="0.4431372549" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="gKT-YC-n0B">
+                            <rect key="frame" x="20" y="242" width="280" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <action selector="textfieldreturn:" destination="-1" eventType="editingDidEndOnExit" id="56h-wm-eSg"/>
+                                <outlet property="delegate" destination="-1" id="obs-FP-jHQ"/>
+                            </connections>
+                        </textField>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Access Code" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="h8H-Uh-8Nj">
+                            <rect key="frame" x="20" y="280" width="280" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                            <color key="textColor" red="0.79607843140000001" green="0.4431372549" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="tTf-Wx-uCV">
+                            <rect key="frame" x="20" y="300" width="280" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <action selector="textfieldreturn:" destination="-1" eventType="editingDidEndOnExit" id="SIc-5c-sw6"/>
+                                <outlet property="delegate" destination="-1" id="sbj-nA-u9U"/>
+                            </connections>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="hPm-Vi-Nzu">
+                            <rect key="frame" x="20" y="338" width="280" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                            <state key="normal" title="Proceed" backgroundImage="login_button_bg.png">
+                                <color key="titleColor" red="0.53333333329999999" green="0.12549019610000001" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="proceedButtonTapped:" destination="-1" eventType="touchUpInside" id="1ZG-wX-IzP"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="a7Z-Df-poq">
+                            <rect key="frame" x="20" y="376" width="280" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                            <state key="normal" title="Already Registered?" backgroundImage="already_registered_bg.png">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="alreadyRegisteredButtonTapped:" destination="-1" eventType="touchUpInside" id="Qu7-Mh-FDg"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="0.0" maxX="1" maxY="0.0"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="0.53333333329999999" green="0.12549019610000001" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+            <point key="canvasLocation" x="274" y="39"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="already_registered_bg.png" width="390" height="55"/>
+        <image name="cpf_logo3.png" width="307" height="92"/>
+        <image name="login_button_bg.png" width="390" height="56"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
